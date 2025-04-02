@@ -1,0 +1,21 @@
+[package]
+name = "hex"
+version = "0.1.0"
+edition = "2024"
+authors = ["Skylark"]
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+clap = { version = "4.5.35", features = ["derive"] }
+num-bigint = "0.4.6"
+num-traits = "0.2.19"
+
+[workspace.lints.rust]
+unsafe_code = "warn"
+missing_docs = "warn"
+
+[workspace.lints.clippy]
+pedantic = "warn"
+nursery = "warn"
+unwrap_used = "warn"
+use_debug = "warn"
